@@ -73,7 +73,7 @@ jobs:
         with:
           context: ./backend/
           push: true
-          tags: nik4el/kittygram_backend:latest
+          tags: nik4el/taski_backend:latest
 
   frontend_tests:
     runs-on: ubuntu-latest
@@ -119,7 +119,7 @@ jobs:
         with:
           context: ./frontend/
           push: true
-          tags: nik4el/kittygram_frontend:latest
+          tags: nik4el/taski_frontend:latest
 
 
   build_gateway_and_push_to_docker_hub:
@@ -141,7 +141,7 @@ jobs:
           context: ./gateway/
           push: true
           # Тут вместо username должен быть ваш логин на Docker Hub
-          tags: nik4el/kittygram_gateway:latest
+          tags: nik4el/taski_gateway:latest
 
 
   deploy:
